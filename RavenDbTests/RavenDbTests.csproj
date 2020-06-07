@@ -1,0 +1,13 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="RavenDB.Client" Version="3.5.9" />
+    <PackageReference Include="RavenDB.Client.UniqueConstraints" Version="3.5.9" />
+  </ItemGroup>
+
+</Project>
