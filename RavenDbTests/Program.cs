@@ -59,6 +59,10 @@ namespace RavenDbTests
                         else
                             Console.WriteLine(ex.Message);
                     }
+                    catch (Exception ex)
+                    {
+                        Console.WriteLine(ex.Message);
+                    }
                 }
 
                 Console.WriteLine(new string('-', 50));
@@ -127,8 +131,6 @@ namespace RavenDbTests
                     // insert only if there are no unique constraints
                     if (checkResult.ConstraintsAreFree())
                     {
-                        session.Store(product1);
-
                         session.Store(product1, product1.ProductId.ToString());
                         session.SaveChanges();
                     }
